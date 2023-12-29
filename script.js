@@ -23,9 +23,22 @@ function enviarDados() {
         if (erros.length > 0) {
             alert(erros.join("\n"));  // Exibe todas as mensagens de erro
         } else {
-            alert(exibeDados);  
+            enviarWhatsapp();
         }
     }
+    
+function enviarWhatsapp() {
+    const numeroWhatsapp = "+5569992974079";
+
+    const apiWhatsapp = "https://wa.me/" + numeroWhatsapp + "?text=" + 
+    "*Nome:* "+nome+"%0a" + 
+    "*Email:* "+email+"%0a" + 
+    "*Mensagem:* "+mensagem+"%0a";
+    
+    
+    window.open(apiWhatsapp, '_blank').focus();
+}
+
     verificaCampos({ nome, email, mensagem });
 }
 

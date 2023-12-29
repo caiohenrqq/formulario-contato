@@ -2,6 +2,8 @@
 
 **Um simples formulário de contato desenvolvido em HTML, Tailwind CSS e JavaScript.**
 
+![Alt text](image.png)
+
 ### Funcionalidades
 
 - **Nome:** Campo obrigatório para inserção do nome do remetente.

@@ -22,7 +22,6 @@ function enviarDados() {
         let emailTexto = document.getElementById("emailTexto");
         let mensagemTexto = document.getElementById("mensagemTexto");
         
-        // Remova todas as classes antes de verificar novamente
         nomeTexto.classList.remove('text-red-600', 'text-zinc-700');
         emailTexto.classList.remove('text-red-600', 'text-zinc-700');
         mensagemTexto.classList.remove('text-red-600', 'text-zinc-700');
@@ -51,7 +50,10 @@ function enviarDados() {
         let erros = erroNome + erroEmail + erroMensagem;
         
         if (erros === 0) {
-            enviarWhatsapp();
+            alert("Você será redirecionado ao Whatsapp em alguns segundos!")
+            setTimeout(function() {
+                enviarWhatsapp();
+            }, 3000);
         }
         
         // const erros = [];  // Lista para armazenar mensagens de erro
@@ -77,7 +79,9 @@ function enviarWhatsapp() {
     "*Email:* "+email+"%0a" + 
     "*Mensagem:* "+mensagem+"%0a";
     
-    
+    const enviadoTexto = document.getElementById("enviadoTexto");
+    enviadoTexto.style.display = "block";
+
     window.open(apiWhatsapp, '_blank').focus();
 }
 

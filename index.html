@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
-</head>
-<body class="bg-gray-100 p-8">
+  </head>
+  <body class="bg-gray-100 p-8">
     <div class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
-        <h2 class="text-2xl font-bold mb-4 text-center">Formulário de Contato</h2>
-      
-        <form action="" method="post">
-          <!-- Nome -->
-          <div class="mb-4">
-            <label for="nome" id="nomeTexto" style="user-select: none;" class="block text-gray-600 text-sm font-semibold mb-2">Nome: *</label>
-            <input type="text" id="nome" name="nome" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Seu nome completo">
-          </div>
-      
-          <!-- Email -->
-          <div class="mb-4">
-            <label for="email" id="emailTexto" style="user-select: none;"class="block text-gray-600 text-sm font-semibold mb-2">Email: *</label>
-            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="email@gmail.com">
-          </div>
-      
-          <!-- Mensagem -->
-          <div class="mb-4">
-            <label for="mensagem" id="mensagemTexto" style="user-select: none;"class="block text-gray-600 text-sm font-semibold mb-2">Mensagem: *</label>
-            <textarea id="mensagem" name="mensagem" rows="4" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Fale conosco!"></textarea>
-          </div>
-      
-          <!-- Botão de Envio -->
-          <div class="flex items-center justify-between"> 
-            <button type="button" onclick="enviarDados()" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">Enviar</button>
-            <span id="enviadoTexto" style="user-select: none; display: none;" class="text-green-400 mx-auto">Enviado com sucesso!</span>
-          </div>
-        </form>
-      </div>
-      
-      <!-- Apenas para testes: -->
-      <!-- <div class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
+      <h2 class="text-2xl font-bold mb-4 text-center">Formulário de Contato</h2>
+
+      <form action="" method="post">
+        <!-- Nome -->
+        <div class="mb-4">
+          <label
+            for="nome"
+            id="nomeTexto"
+            style="user-select: none"
+            class="block text-gray-600 text-sm font-semibold mb-2"
+            >Nome: *</label
+          >
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="Seu nome completo"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label
+            for="email"
+            id="emailTexto"
+            style="user-select: none"
+            class="block text-gray-600 text-sm font-semibold mb-2"
+            >Email: *</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="email@gmail.com"
+          />
+        </div>
+
+        <!-- Mensagem -->
+        <div class="mb-4">
+          <label
+            for="mensagem"
+            id="mensagemTexto"
+            style="user-select: none"
+            class="block text-gray-600 text-sm font-semibold mb-2"
+            >Mensagem: *</label
+          >
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            placeholder="Fale conosco!"
+          ></textarea>
+        </div>
+
+        <!-- Botão de Envio -->
+        <div class="flex items-center justify-between">
+          <button
+            type="button"
+            onclick="enviarDados()"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+          >
+            Enviar
+          </button>
+          <span
+            id="enviadoTexto"
+            style="user-select: none; display: none"
+            class="text-green-400 mx-auto"
+            >Enviado com sucesso!</span
+          >
+        </div>
+      </form>
+    </div>
+
+    <!-- Apenas para testes: -->
+    <!-- <div class="max-w-md mx-auto bg-white rounded p-8 shadow-md">
         <h2 class="text-2xl font-bold mb-4 text-center" id="resultado">
             Resultado:
         </h2>
       </div> -->
-</body>
+  </body>
 </html>
